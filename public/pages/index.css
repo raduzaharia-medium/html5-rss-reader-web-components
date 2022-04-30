@@ -1,0 +1,48 @@
+@import url(/shared/styles/base.css);
+
+summary {
+  cursor: pointer;
+}
+
+summary::marker {
+  content: none;
+}
+
+ul.articles li {
+  border-bottom: 1px solid var(--border-color);
+}
+
+ul.articles li div {
+  padding: 1em 0 0.2em 0;
+}
+
+a.back {
+  display: none;
+}
+
+ul.feeds li.selected a {
+  text-shadow: var(--selection-shadow);
+}
+
+ul.articles li.selected summary {
+  text-shadow: var(--selection-shadow);
+}
+
+@media (max-width: 710px) {
+  main {
+    display: none;
+  }
+
+  body.feed-selected nav {
+    display: none;
+  }
+
+  body.feed-selected main {
+    display: block;
+  }
+
+  a.back {
+    display: block;
+    padding-top: 2em;
+  }
+}
