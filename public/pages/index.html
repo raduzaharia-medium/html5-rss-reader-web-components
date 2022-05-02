@@ -16,52 +16,18 @@
 
 <body>
     <nav>
-        <ul id="feeds" class="feeds">
-            <li><a href="#">The Verge</a></li>
-            <li><a href="#">Ars Technica</a></li>
-            <li><a href="#">Hacker News</a></li>
+        <ul id="feeds" is="custom-list">
+            <template>
+                <li is="custom-list-item"></li>
+            </template>
         </ul>
     </nav>
     <main>
-        <ul id="articles" class="articles">
-            <li>
-                <details>
-                    <summary>Article 1</summary>
-                    <div>Article 1 summary</div>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Article 2</summary>
-                    <div>Article 2 summary</div>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Article 3</summary>
-                    <div>Article 3 summary</div>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Article 4</summary>
-                    <div>Article 4 summary</div>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Article 5</summary>
-                    <div>Article 5 summary</div>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Article 6</summary>
-                    <div>Article 6 summary</div>
-                </details>
-            </li>
+        <ul id="articles" is="custom-list">
+            <template>
+                <li is="custom-list-item"></li>
+            </template>
         </ul>
-
         <a class="back" href="#">Back</a>
     </main>
 </body>
