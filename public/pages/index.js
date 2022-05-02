@@ -1,3 +1,14 @@
+import { CustomList } from "../shared/components/custom-list.js";
+import { CustomListItem } from "../shared/components/custom-list-item.js";
+
+document
+  .getElementById("feeds")
+  .setItems(["The Verge", "Ars Technica", "Hacker News"]);
+
+document
+  .getElementById("articles")
+  .setItems(["Article1", "Article2", "Article3", "Article4"]);
+
 document.getElementById("feeds").addEventListener("click", (e) => {
   document.body.classList.add("feed-selected");
 
