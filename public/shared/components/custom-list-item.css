@@ -1,0 +1,11 @@
+li.custom-list-item {
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: clip;
+  margin-bottom: 0.6em;
+}
+
+li.custom-list-item.selected {
+  text-shadow: var(--selection-shadow);
+}
