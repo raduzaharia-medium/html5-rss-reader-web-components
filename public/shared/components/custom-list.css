@@ -1,0 +1,3 @@
+ul.custom-list.alternate-odd li:nth-child(odd) {
+  background-color: #0001;
+}
